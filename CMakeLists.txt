@@ -7,4 +7,10 @@ include_directories(include)
 
 file(GLOB SOURCES "src/*.c")
 
-add_executable(carnet_d_adress ${SOURCES})
+add_executable(carnet_d_adress ${SOURCES}
+        include/carnet.h
+        src/carnet.c
+        include/user_interface.h
+        src/user_interface.c
+        include/functions.h
+        src/functions.c)
